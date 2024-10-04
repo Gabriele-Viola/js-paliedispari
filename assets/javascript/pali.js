@@ -16,12 +16,14 @@ for (let i = wordToCheckLC.length - 1; i >= 0; i--) {
     reversedLowerCase = reversed.toLowerCase() 
 }
 if (wordToCheckLC == reversedLowerCase) {
-   console.log(`${wordToCheckLC} is palindrome`);
+   return (`${wordToCheckLC} is palindrome`);
 
 }else {
-    console.log(`${wordToCheckLC} is not palindrome`);        
+    return (`${wordToCheckLC} is not palindrome`);        
 }
 }
+
 console.log(checkWord(wordToCheckLC));
+
 
 
