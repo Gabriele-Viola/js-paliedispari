@@ -11,15 +11,16 @@ while (wannaplay) {
         return sum = player_number + cpu_number
     }
     console.log(sumOfTwo(player_number));
+    
 
 
-
+5
     function EvenOrOdd(choose) {
         if ((sum % 2 == 0 && choose == 'pari') || (sum % 2 != 0 && choose == 'dispari')) {
-            return (` your number is ${player_number} and cpu numer is , the sum is ${sum} You Win!`);
+            return (` your number is ${player_number} and cpu numer is ${sum - player_number} , the sum is ${sum}, and you choose ${choose} You Win!`);
 
         } else if ((sum % 2 == 0 && choose == 'dispari') || (sum % 2 != 0 && choose == 'pari')) {
-            return (` your number is ${player_number} and cpu numer is , the sum is ${sum} You Lose!`);
+            return (` your number is ${player_number} and cpu numer is ${sum - player_number} , the sum is ${sum}, and you choose ${choose} You Lose!`);
 
         }
     }
@@ -27,7 +28,6 @@ while (wannaplay) {
     alert(EvenOrOdd(choose))
 
 
-    alert(EvenOrOdd(player_number, choose));
 
     wannaplay = confirm('again?')
 }
