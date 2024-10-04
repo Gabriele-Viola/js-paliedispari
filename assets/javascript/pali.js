@@ -4,22 +4,24 @@ Chiedere all’utente di inserire una parola Creare una funzione per capire se l
 */
 
 
-let wordToCheck = "radar";
+let wordToCheck = prompt('inserisci la parola da verificare');
+let wordToCheckLC = wordToCheck.toLowerCase()
 let reversed = ""
+let reversedLowerCase
 
-function checkWord (wordToCheck){
+function checkWord (wordToCheckLC){
 
-for (let i = wordToCheck.length - 1; i >= 0; i--) {
-    reversed = reversed + wordToCheck[i]; 
+for (let i = wordToCheckLC.length - 1; i >= 0; i--) {
+    reversed = reversed + wordToCheckLC[i];
+    reversedLowerCase = reversed.toLowerCase() 
 }
-if (wordToCheck == reversed) {
-   console.log(`${wordToCheck} is palindrome`);
+if (wordToCheckLC == reversedLowerCase) {
+   console.log(`${wordToCheckLC} is palindrome`);
 
 }else {
-    console.log(`${wordToCheck} is not palindrome`);        
+    console.log(`${wordToCheckLC} is not palindrome`);        
 }
 }
-console.log(checkWord(wordToCheck));
-
+console.log(checkWord(wordToCheckLC));
 
 
