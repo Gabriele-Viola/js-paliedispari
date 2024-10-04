@@ -5,28 +5,21 @@ Chiedere all’utente di inserire una parola Creare una funzione per capire se l
 
 
 let wordToCheck = "radar";
-let reversed = "";
-let message
+let reversed = ""
 
+function checkWord (wordToCheck){
 
-function ChekWord(wordToCheck) {
-    let wordToCheck = "radar";
-    let reversed = "";
-    
-
-    for (let i = wordToCheck.length - 1; i >= 0; i--) {
-        reversed += wordToCheck[i];
-
-
-    }
-    if (wordToCheck == reversed) {
-        message =`${wordToCheck} is palindrome`;
-        return message;
-
-    } else {
-        message = `${wordToCheck} is NOT palindrome`;
-        return message
-    }
-
+for (let i = wordToCheck.length - 1; i >= 0; i--) {
+    reversed = reversed + wordToCheck[i]; 
 }
-console.log(message);
+if (wordToCheck == reversed) {
+   console.log(`${wordToCheck} is palindrome`);
+
+}else {
+    console.log(`${wordToCheck} is not palindrome`);        
+}
+}
+console.log(checkWord(wordToCheck));
+
+
+
