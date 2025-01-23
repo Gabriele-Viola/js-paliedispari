@@ -1,0 +1,2 @@
+## Palindromi o Pari e Dispari
+In questo esercizio ho creato un piccolo programma per verificare se una parola è **palindroma**, ossia se letta al contrario non cambia significato. Inoltre, ho sviluppato un gioco di **pari** e **dispari**, in cui il giocatore sceglie se la somma del numero da lui scelto e del numero generato dal computer sarà pari o dispari, e riceve un messaggio che indica se ha vinto o perso.
